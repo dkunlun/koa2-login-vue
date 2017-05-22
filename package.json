@@ -1,0 +1,17 @@
+{
+  "name": "koa-login",
+  "version": "1.0.0",
+  "description": "koa login",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kl",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "koa": "^2.2.0",
+    "koa-router": "^7.1.1",
+    "koa-views": "^6.0.2"
+  }
+}
