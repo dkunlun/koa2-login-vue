@@ -29,3 +29,5 @@ const user = {
 		return result
 	}
 }
+
+module.exports = user

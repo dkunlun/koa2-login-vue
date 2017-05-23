@@ -5,13 +5,15 @@
   "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server/app.js"
+    "start": "node ./server/app.js",
+    "start-debug": "node --inspect ./server/app.js"
   },
   "author": "kl",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.6",
     "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.1.1",
     "koa-views": "^6.0.2",
     "mysql": "^2.13.0",
