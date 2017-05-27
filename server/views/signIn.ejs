@@ -7,36 +7,26 @@
 <body>
 	<div id="app">
 		<div>
-			<span>邮箱：</span>
-			<input type="text" name="email" id="email"/>
-		</div>
-		<div>
 			<span>用户名：</span>
 			<input type="text" name="userName" id="userName"/>
 		</div>
 		<div>
 			<span>密码：</span>
-			<input type="text" name="password" id="password"/>
+			<input type="password" name="password" id="password"/>
 		</div>
-		<div>
-			<span>昵称：</span>
-			<input type="text" name="nick" id="nick"/>
-		</div>
-		<div><button id="submit">注册</button></div>
+		<div><button id="submit">登录</button></div>
 	</div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 	$('#submit').on('click', function (e) {
 		$.ajax({
-			url:'/api/user/signUp.json',
+			url:'/api/user/signIn.json',
 			type:'POST', //GET
 			async:true,    //或false,是否异步
 			data:{
-				email: $('#email').val(),
 				password: $('#password').val(),
 				userName: $('#userName').val(),
-				nick: $('#nick').val(),
 			},
 			timeout:5000,    //超时时间
 			dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text

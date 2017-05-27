@@ -7,5 +7,6 @@ const userInfoController = require('./../controllers/user-info')
 
 const routers = router
 	.post('/user/signUp.json', userInfoController.signUp)
+	.post('/user/signIn.json', userInfoController.signIn)
 
 module.exports = routers
